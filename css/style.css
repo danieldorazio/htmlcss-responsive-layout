@@ -6,6 +6,7 @@
     --color-light_blue: #b5ddff;
     --color-violet: #9792e4;
     --color-dark_gray: #333333;
+    --color-white: #ffffff;
 }
 
 
@@ -148,14 +149,35 @@ body {
 }
 
 /*DESKTOP*/
+
 @media screen and (min-width:992px) {
     .demo-application .demo-cards:first-child {
         display: flex;
     }
 
     .demo-cards .cards-text, .demo-cards .cards-img{
-        background-color: #d06767;
         width: 50%;
         margin-right: 1rem;
+        /*debug*/
+        background-color: #d06767;
     }
+}
+
+/***************************************
+ *          STRATEGIC PLANNING         *
+ ***************************************/
+
+ .planning {
+    background-color: var(--color-violet);
+ }
+
+.planning-text {
+    /*debug*/
+    background-color: antiquewhite;
+}
+.planning-cards {
+    border-radius: 3rem;
+    text-align: center;
+    /*debug*/
+    background-color: var(--color-white);
 }
