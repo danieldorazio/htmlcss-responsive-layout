@@ -171,13 +171,32 @@ body {
     background-color: var(--color-violet);
  }
 
-.planning-text {
+.planning .planning-text {
     /*debug*/
     background-color: antiquewhite;
 }
-.planning-cards {
+
+.planning .planning-cards {
     border-radius: 3rem;
     text-align: center;
     /*debug*/
     background-color: var(--color-white);
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width:992px) {
+    .planning-main {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+    }
+    
+    .planning-text{
+        width: 58%;
+    }
+
+    .planning-cards{
+        width: 40%;
+    }
 }
