@@ -38,6 +38,7 @@ body {
 .container {
     width: 95%;
     margin: 0 auto;
+    max-width: 1000px;
     /*debug*/
     background-color: rgb(218, 169, 169);
 }
@@ -281,3 +282,21 @@ background-color: var(--color-violet);
         width: calc(98% / 3);
     }  
  }
+
+  /***************************************
+ *               ABOUT-US                *
+ ***************************************/
+ .about-us-text> h3 {
+    color: var(--color-violet);
+ }
+
+ .about-us-text {
+    /*debug*/
+    background-color: aqua;
+ }
+
+ .about-us-img {
+    /*debug*/
+    background-color: rgb(153, 94, 165);
+ }
+
