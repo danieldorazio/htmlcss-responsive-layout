@@ -234,3 +234,22 @@ body {
         text-align: left;
     }
  }
+
+ /***************************************
+ *               BENEFITS               *
+ ***************************************/
+
+ .benefits { 
+background-color: var(--color-violet);
+ }
+
+ .benefits-main> h3 {
+    text-align: center;
+    /*debug*/
+    background-color: aqua;
+ }
+
+ .benefits-main .cards-text {
+    background-color: var(--color-white);
+    border-radius: 1rem;
+ }
