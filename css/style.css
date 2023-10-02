@@ -300,3 +300,20 @@ background-color: var(--color-violet);
     background-color: rgb(153, 94, 165);
  }
 
+/*TABLET*/
+
+@media screen and (min-width:768px) {
+    .about-us-main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us-text {
+        width: 68%;
+    }
+    .about-us-img {
+        width: 30%;
+    }
+    
+}
+
