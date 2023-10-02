@@ -9,8 +9,6 @@
     --color-white: #ffffff;
 }
 
-
-
 /***************************************
  *               RESET                 *
  ***************************************/
@@ -35,24 +33,13 @@ body {
  *               COMMON                *
  ***************************************/
 
+/*STRUCTURE*/
 .container {
     width: 95%;
     margin: 0 auto;
     max-width: 1000px;
     /*debug*/
     background-color: rgb(218, 169, 169);
-}
-
-.ul-none {
-    list-style-type: none;
-}
-
-.a-none {
-    text-decoration: none;
-}
-
-.flex {
-    display: flex;
 }
 
 .padding-section {
@@ -65,6 +52,31 @@ body {
 
 .margin-bottom-content{
     margin-bottom: 1rem;
+}
+
+/*DECORATION*/
+
+.ul-none {
+    list-style-type: none;
+}
+
+.a-none {
+    text-decoration: none;
+}
+
+/*GRILLE*/
+.flex {
+    display: flex;
+}
+
+/*BUTTON*/
+.btn-white {
+    display: inline-block;
+    background-color: var(--color-white);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    vertical-align: middle;
+    
 }
 /***************************************
  *               HEADER                *
@@ -81,30 +93,28 @@ body {
     align-items: center;
 }
 
-.header-nav a 
- {
-    /*debug*/
-    background-color: aliceblue;
-}
-
  .header-nav ul {
     display: none;
 } 
  
-.header-nav li {    /*tranne il btn che non lo avrà*/
+.header-nav li {   
     margin: 0 1rem;
+}
+
+.header-nav a {
+    color: var(--color-white);
+}
+
+.header-nav a.btn-white {
+    color: black;
 }
 
 /*DESKTOP*/
 
 @media screen and (min-width: 992px) {
-    .container{
-        /*debug*/
-        background-color: #34536e;
-    }
-
     .header-nav ul {
         display: flex;
+        align-items: center;
     }            
 
     .header-nav .menu {
@@ -113,7 +123,7 @@ body {
 } 
 
 /***************************************
- *               MAIN                  *
+ *               MAIN                  *    continuare da qui 
  ***************************************/
 
  /***************************************
@@ -133,11 +143,6 @@ body {
 /*TABLET*/
 
 @media  screen and (min-width:768px) {
-    .container {
-        /*debug*/
-        background-color: rgb(209, 166, 211);
-    }
-
     .demo-application .demo-cards {
         width: calc(98% / 3)
     }
@@ -145,8 +150,6 @@ body {
     .demo-application .demo-cards:first-child {
         width: calc(( 98% / 3 ) * 2);
     }
-
-    
 }
 
 /*DESKTOP*/
