@@ -49,10 +49,21 @@ body {
     text-decoration: none;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
+.padding-section {
+    padding: 3rem 0;
+}
+
+.padding-content{
+    padding: 1rem;
+}
+
+.margin-bottom-content{
+    margin-bottom: 1rem;
+}
 /***************************************
  *               HEADER                *
  ***************************************/
@@ -72,25 +83,62 @@ body {
  {
     /*debug*/
     background-color: aliceblue;
-    margin: 0 1rem;
 }
 
  .header-nav ul {
     display: none;
 } 
+ 
+.header-nav li {    /*tranne il btn che non lo avrà*/
+    margin: 0 1rem;
+}
+
+/*DESKTOP*/
 
 @media screen and (min-width: 992px) {
+    .container{
+        /*debug*/
+        background-color: #34536e;
+    }
+
     .header-nav ul {
         display: flex;
-    }           
+    }            
 
     .header-nav .menu {
         display: none;
     }
-
-    body{
-        background-color: slategray;
-    }
 } 
 
+/***************************************
+ *               MAIN                  *
+ ***************************************/
 
+ /***************************************
+ *          DEMO-APPLICATION            *
+ ***************************************/
+ 
+ .demo-application.flex { /*da vedere bene, vorrei mettere gap*/
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+ 
+.demo-application .demo-cards {
+    background-color: var(--color-light_blue);
+    border-radius: 1rem;
+}
+
+@media  screen and (min-width:768px) {
+    .container {
+        /*debug*/
+        background-color: rgb(209, 166, 211);
+    }
+
+    .demo-application .demo-cards {
+        width: calc(98% / 3)
+    }
+
+    .demo-cards:first-child {
+        width: calc(( 98% / 3 ) * 2);
+    }
+}
