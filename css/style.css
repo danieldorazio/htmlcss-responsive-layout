@@ -337,3 +337,19 @@ background-color: var(--color-violet);
  }
 
 
+ /***************************************
+ *                 FOOTER               *
+ ***************************************/
+
+ .footer {
+    background-color: var(--color-dark_gray);
+ }
+
+ .footer-main {
+    text-align: center;
+    color: var(--color-white);
+ }
+
+ .footer-main> p {
+    margin-bottom: 2.5rem;
+ }
