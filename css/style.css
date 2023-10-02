@@ -1,3 +1,19 @@
+/***************************************
+ *               ROOT                 *
+ ***************************************/
+:root {
+    --color-blue: #0084fd;
+    --color-light_blue: #b5ddff;
+    --color-violet: #9792e4;
+    --color-dark_gray: #333333;
+}
+
+
+
+/***************************************
+ *               RESET                 *
+ ***************************************/
+
 * {
     margin: 0;
     padding: 0;
@@ -13,3 +29,53 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+
+/***************************************
+ *               COMMON                *
+ ***************************************/
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.ul-none {
+    list-style-type: none;
+}
+
+.a-none {
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+}
+
+/***************************************
+ *               HEADER                *
+ ***************************************/
+
+.header-nav {
+    height: 70px;
+    width: 100%; 
+    background-color:var(--color-blue) ;
+}
+
+.header-nav nav {
+    width: 100%;
+}
+
+.header-nav nav.flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav .logo, 
+.header-nav .menu, 
+.header-nav ul {
+    /*debug*/
+    background-color: aliceblue;
+}
+
+
+
