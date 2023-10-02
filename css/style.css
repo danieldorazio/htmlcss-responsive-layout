@@ -267,3 +267,17 @@ background-color: var(--color-violet);
         width: calc(98% / 2);
     }  
  }
+
+ /*DESKTOP*/
+
+ @media screen and (min-width:992px) {
+    .benefits-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .cards-text {
+        width: calc(98% / 3);
+    }  
+ }
