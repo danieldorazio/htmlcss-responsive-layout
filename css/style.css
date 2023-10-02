@@ -327,3 +327,13 @@ background-color: var(--color-violet);
  .get-started-main {
     text-align: center;
  }
+
+ /*TABLET*/
+ 
+ @media screen and (min-width:768px) {
+    .get-started-main.container{
+        max-width: 758px;
+    } 
+ }
+
+
