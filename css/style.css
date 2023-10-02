@@ -314,6 +314,16 @@ background-color: var(--color-violet);
     .about-us-img {
         width: 30%;
     }
-    
 }
 
+ /***************************************
+ *             GET STARTED              *
+ ***************************************/
+
+ .get-started {
+    background-color: var(--color-violet);
+ }
+
+ .get-started-main {
+    text-align: center;
+ }
