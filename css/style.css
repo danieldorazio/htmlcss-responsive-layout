@@ -155,7 +155,7 @@ body {
         display: flex;
     }
 
-    .demo-cards .cards-text, .demo-cards .cards-img{
+    .demo-cards .cards-text, .demo-cards .cards-img {
         width: 50%;
         margin-right: 1rem;
         /*debug*/
@@ -192,11 +192,27 @@ body {
         justify-content: space-between;
     }
     
-    .planning-text{
+    .planning-text {
         width: 58%;
     }
 
-    .planning-cards{
+    .planning-cards {
         width: 40%;
     }
 }
+
+/***************************************
+ *             TESTIMONIALS            *
+ ***************************************/
+
+ .testimonials .testimonials-text {
+    text-align: center;
+    /*debug*/
+    background-color: rgb(145, 59, 59);
+ }
+
+ .testimonials .testimonials-cards {
+    background-color: var(--color-violet);
+    border-radius: 3rem;
+    text-align: center;
+ }
