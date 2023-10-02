@@ -253,3 +253,17 @@ background-color: var(--color-violet);
     background-color: var(--color-white);
     border-radius: 1rem;
  }
+
+ /*TABLET*/
+
+ @media screen and (min-width:768px) {
+    .benefits-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .cards-text {
+        width: calc(98% / 2);
+    }  
+ }
