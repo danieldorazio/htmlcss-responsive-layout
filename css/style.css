@@ -216,3 +216,21 @@ body {
     border-radius: 3rem;
     text-align: center;
  }
+
+ /*tablet*/
+
+ @media screen and (min-width:768px) {
+    .testimonials .testimonials-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .testimonials-cards .cards-img {
+        width: 30%;
+    }
+    .testimonials-cards .cards-text {
+        width: 65%;
+        text-align: left;
+    }
+ }
