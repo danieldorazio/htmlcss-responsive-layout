@@ -38,7 +38,7 @@ h3 {
 }
 
 p {
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 /***************************************
 *               COMMON                *
@@ -291,6 +291,11 @@ p {
     text-align: center;
 }
 
+.testimonials-text h4 {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
 .testimonials-text h3 {
     color: var(--color-violet);
 }
@@ -477,6 +482,43 @@ p {
  .get-started-main {
     text-align: center;
 }
+
+.get-started-main h4 {
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #d5d4f4;
+}
+
+.get-started-main .simple {
+    color: white;
+    font-size: 2rem;
+}
+
+.get-started-main .free {
+    color: #fdc15f;
+    font-size: 4rem;
+}
+
+.get-started-main p {
+    color: var(--color-white);
+}
+
+.get-started-main a.btn {
+    background-color: var(--color-white);
+    color: var(--color-violet);
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+}
+
+.get-started-main .privacy {
+    display: inline-block;
+    color: var(--color-white);
+}
+
+
+
+
+
 
  /*TABLET*/
  
