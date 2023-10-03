@@ -27,9 +27,22 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+h3 {
+    color: var(--color-blue);
+    font-size: 1.5rem;
+}
+
+.icons {
+    font-size: 5rem;
+    color: var(--color-blue);
+}
+
+p {
+    line-height: 1.5rem;
+}
 /***************************************
- *               COMMON                *
- ***************************************/
+*               COMMON                *
+***************************************/
 
 /*STRUCTURE*/
 .container {
@@ -84,6 +97,17 @@ body {
     padding: .5rem 2.5rem;
     vertical-align: middle;  
 }
+
+.planning-cards .btn-violet {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background-color: var(--color-violet);
+    color: black;
+}
 /***************************************
  *               HEADER                *  da mettere in fixed
  ***************************************/
@@ -99,10 +123,10 @@ body {
     align-items: center;
 }
 
- .header-nav ul {
+.header-nav ul {
     display: none;
 } 
- 
+
 .header-nav li {   
     margin: 0 1rem;
 }
@@ -147,19 +171,6 @@ body {
     text-align: center;
 }
 
-.demo-cards h3 {
-    color: var(--color-blue);
-    font-size: 1.5rem;
-}
-
-.demo-cards .icons {
-    font-size: 5rem;
-    color: var(--color-blue);
-}
-
-.demo-cards p {
-    line-height: 1.5rem;
-}
 
 /*demo-cards:first-child*/
 
@@ -169,7 +180,7 @@ body {
 }
 .demo-cards img {
     display: block;
-    width: 50%;
+    
 }
 
 /*TABLET*/
@@ -204,27 +215,32 @@ body {
 }
 
 /***************************************
- *          STRATEGIC PLANNING         *
- ***************************************/
+*          STRATEGIC PLANNING         *
+***************************************/
 
- .planning {
+.planning {
     background-color: var(--color-violet);
- }
+}
 
-.planning .planning-text {
-    /*debug*/
-    background-color: antiquewhite;
+.planning-main.container {
+   max-width: 850px;
+}
+
+.planning-text, .planning-text h3{
+    color: var(--color-white);
+}
+.planning-text img {
+    margin-bottom: 2rem;
 }
 
 .planning .planning-cards {
     border-radius: 3rem;
     text-align: center;
-    /*debug*/
     background-color: var(--color-white);
 }
-
-/*DESKTOP*/
-
+    
+    /*DESKTOP*/
+    
 @media screen and (min-width:992px) {  
     .planning-main {
         display: flex;
@@ -234,11 +250,11 @@ body {
     
     .planning-text {
         width: 58%;
-    }
+}
 
     .planning-cards {
-        width: 40%;
-    }
+    width: 40%;
+}
 }
 
 /***************************************
@@ -305,7 +321,7 @@ background-color: var(--color-violet);
         justify-content: space-between;
     }
 
-    .cards-text {
+    .benefits-cards .cards-text {
         width: calc(98% / 2);
     }  
  }
@@ -319,7 +335,7 @@ background-color: var(--color-violet);
         justify-content: space-between;
     }
 
-    .cards-text {
+    .benefits-cards .cards-text {
         width: calc(98% / 3);
     }  
  }
