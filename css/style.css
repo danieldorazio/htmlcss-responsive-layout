@@ -24,9 +24,7 @@ img {
 }
 
 body {
-    font-family: 'Comic Neue', cursive;
     font-family: 'PT Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
 }
 
 /***************************************
@@ -36,8 +34,8 @@ body {
 /*STRUCTURE*/
 .container {
     width: 95%;
-    margin: 0 auto;
     max-width: 1000px;
+    margin: 0 auto;
     /*debug*/
     background-color: rgb(218, 169, 169);
 }
@@ -75,15 +73,23 @@ body {
     background-color: var(--color-white);
     border-radius: 2rem;
     padding: .5rem 1rem;
-    vertical-align: middle;
-    
+    vertical-align: middle;  
+}
+
+.btn-blue {
+    display: inline-block;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-radius: 2rem;
+    padding: .5rem 2.5rem;
+    vertical-align: middle;  
 }
 /***************************************
- *               HEADER                *
+ *               HEADER                *  da mettere in fixed
  ***************************************/
 
 .header-nav {
-    height: 70px;
+    height: 70px; /* cambiare unita di minura in rem */
     width: 100%; 
     background-color:var(--color-blue) ;
 }
@@ -130,7 +136,7 @@ body {
  *          DEMO-APPLICATION            *
  ***************************************/
  
- .demo-application.flex { /*da vedere bene, vorrei mettere gap*/
+ .demo-application.flex { 
      flex-wrap: wrap;
      justify-content: space-between;
  }
@@ -138,6 +144,32 @@ body {
 .demo-application .demo-cards {
     background-color: var(--color-light_blue);
     border-radius: 1rem;
+    text-align: center;
+}
+
+.demo-cards h3 {
+    color: var(--color-blue);
+    font-size: 1.5rem;
+}
+
+.demo-cards .icons {
+    font-size: 5rem;
+    color: var(--color-blue);
+}
+
+.demo-cards p {
+    line-height: 1.5rem;
+}
+
+/*demo-cards:first-child*/
+
+.demo-application .demo-cards:first-child{
+    padding: 1rem 1rem 0 1rem;
+    text-align: left;
+}
+.demo-cards img {
+    display: block;
+    width: 50%;
 }
 
 /*TABLET*/
@@ -148,13 +180,13 @@ body {
     }
 
     .demo-application .demo-cards:first-child {
-        width: calc(( 98% / 3 ) * 2);
+        width: calc(( 99% / 3 ) * 2 );
     }
 }
 
 /*DESKTOP*/
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:992px) { /*mettere gap*/
     .demo-application .demo-cards:first-child {
         display: flex;
     }
@@ -162,8 +194,12 @@ body {
     .demo-cards .cards-text, .demo-cards .cards-img {
         width: 50%;
         margin-right: 1rem;
-        /*debug*/
-        background-color: #d06767;
+    }
+
+    .demo-cards .cards-img {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
     }
 }
 
@@ -189,7 +225,7 @@ body {
 
 /*DESKTOP*/
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:992px) {  
     .planning-main {
         display: flex;
         align-items: end;
@@ -230,9 +266,11 @@ body {
         align-items: center;
         
     }
-    .testimonials-cards .cards-img {
+
+    .testimonials-cards .cards-img {  /*guardare sreen per foto*/
         width: 30%;
     }
+
     .testimonials-cards .cards-text {
         width: 65%;
         text-align: left;
@@ -314,6 +352,7 @@ background-color: var(--color-violet);
     .about-us-text {
         width: 68%;
     }
+
     .about-us-img {
         width: 30%;
     }
@@ -329,7 +368,7 @@ background-color: var(--color-violet);
 
  .get-started-main {
     text-align: center;
- }
+}
 
  /*TABLET*/
  
@@ -337,7 +376,7 @@ background-color: var(--color-violet);
     .get-started-main.container{
         max-width: 758px;
     } 
- }
+}
 
 
  /***************************************
