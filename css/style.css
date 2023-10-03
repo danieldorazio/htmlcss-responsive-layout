@@ -49,8 +49,6 @@ p {
     width: 95%;
     max-width: 1000px;
     margin: 0 auto;
-    /*debug*/
-    background-color: rgb(218, 169, 169);
 }
 
 .padding-section {
@@ -111,13 +109,15 @@ p {
 }
 
 /***************************************
-*               HEADER                *  da mettere in fixed
+*               HEADER                *  
 ***************************************/
 
 .header-nav {
-    height: 70px; /* cambiare unita di minura in rem */
+    height: 4rem; 
     width: 100%; 
     background-color:var(--color-blue) ;
+    position: fixed;
+    z-index: 9999;
 }
 
 .header-nav nav.flex {
@@ -155,13 +155,16 @@ p {
 } 
 
 /***************************************
- *               MAIN                  *    continuare da qui 
+ *               MAIN                  *  
  ***************************************/
  
  /***************************************
  *          DEMO-APPLICATION            *
  ***************************************/
- 
+ .demo-application {
+    padding-top: 80px;
+ }
+
  .demo-application.flex { 
      flex-wrap: wrap;
      justify-content: space-between;
@@ -182,7 +185,6 @@ p {
 }
 .demo-cards img {
     display: block;
-    
 }
 
 /*TABLET*/
@@ -337,7 +339,7 @@ p {
         
     }
     
-    .testimonials-cards .cards-img {  /*guardare sreen per foto*/
+    .testimonials-cards .cards-img { 
         width: 30%;
     }
     
@@ -398,7 +400,7 @@ p {
 
  /*DESKTOP*/
 
- @media screen and (min-width:992px) {
+@media screen and (min-width:992px) {
     .benefits-cards {
         display: flex;
         flex-wrap: wrap;
@@ -408,7 +410,7 @@ p {
     .benefits-cards .cards-text {
         width: calc(98% / 3);
     }  
- }
+}
 
   /***************************************
  *               ABOUT-US                *
@@ -416,15 +418,15 @@ p {
 
  /* .about-us-text */
 
- .about-us-text> h3 {
+.about-us-text> h3 {
     color: var(--color-violet);
- }
+}
 
 /* .about-us-img */
 
- .about-us-img {
+.about-us-img {
     padding-top: 1rem;
- }
+}
 
  .about-us-img> div {
     display: inline-block;
@@ -515,11 +517,6 @@ p {
     color: var(--color-white);
 }
 
-
-
-
-
-
  /*TABLET*/
  
  @media screen and (min-width:768px) {
@@ -544,8 +541,12 @@ p {
 
  .footer-main> p {
     margin-bottom: 2.5rem;
+    line-height: normal;
  }
 
+ .footer-main a{
+    color: var(--color-violet);
+ }
   /*TABLET*/
  
   @media screen and (min-width:768px) {
