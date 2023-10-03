@@ -226,17 +226,28 @@ p {
    max-width: 850px;
 }
 
+/*planning text*/
+
 .planning-text, .planning-text h3{
     color: var(--color-white);
 }
+
 .planning-text img {
     margin-bottom: 2rem;
 }
+
+/*planning cards*/
 
 .planning .planning-cards {
     border-radius: 3rem;
     text-align: center;
     background-color: var(--color-white);
+}
+
+.planning-cards img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
     
     /*DESKTOP*/
@@ -260,22 +271,49 @@ p {
 /***************************************
  *             TESTIMONIALS            *
  ***************************************/
+ 
+ /* .testimonials-text */
 
- .testimonials .testimonials-text {
+.testimonials .testimonials-text {
     text-align: center;
-    /*debug*/
-    background-color: rgb(145, 59, 59);
  }
 
- .testimonials .testimonials-cards {
+.testimonials-text h3 {
+    color: var(--color-violet);
+ }
+
+/* .testimonials-cards */
+
+.testimonials .testimonials-cards {
     background-color: var(--color-violet);
     border-radius: 3rem;
     text-align: center;
+    color: var(--color-white);
  }
+
+ .testimonials-cards .cards-img {
+    padding-top: 1rem;
+ }
+
+.testimonials-cards img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonials-cards .cards-text a {
+    display: inline-block;
+    color: inherit;
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+
+}
 
  /*tablet*/
 
- @media screen and (min-width:768px) {
+@media screen and (min-width:768px) {
     .testimonials .testimonials-cards {
         display: flex;
         justify-content: space-between;
