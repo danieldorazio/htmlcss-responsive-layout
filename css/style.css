@@ -65,6 +65,10 @@ p {
     margin-bottom: 1rem;
 }
 
+.relative {
+    position: relative;
+}
+
 /*DECORATION*/
 
 .ul-none {
@@ -404,19 +408,46 @@ p {
   /***************************************
  *               ABOUT-US                *
  ***************************************/
+
+ /* .about-us-text */
+
  .about-us-text> h3 {
     color: var(--color-violet);
  }
 
- .about-us-text {
-    /*debug*/
-    background-color: aqua;
- }
+/* .about-us-img */
 
  .about-us-img {
-    /*debug*/
-    background-color: rgb(153, 94, 165);
+    padding-top: 1rem;
  }
+
+ .about-us-img> div {
+    display: inline-block;
+ }
+
+ .about-us-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-us-img .relative i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--color-violet);
+    font-size: 4rem;
+}
+
+.about-us-img h4 {
+    color: var(--color-violet);
+    font-size: 1.5rem;
+}
+
+.about-us-img a.btn {
+    background-color: var(--color-violet);
+}
 
 /*TABLET*/
 
@@ -427,11 +458,11 @@ p {
     }
 
     .about-us-text {
-        width: 68%;
+        width: 75%;
     }
 
     .about-us-img {
-        width: 30%;
+        width: 25%;
     }
 }
 
